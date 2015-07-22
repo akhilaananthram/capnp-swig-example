@@ -5,7 +5,8 @@
 #include <fstream>
 #include <iostream>
 
-#include "proto.capnp.h"
+#include "proto/InnerProto.capnp.h"
+#include "proto/OuterProto.capnp.h"
 #include <capnp/message.h>
 #include <capnp/serialize.h>
 #include <kj/std/iostream.h>

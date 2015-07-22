@@ -6,7 +6,8 @@
 
 #include "swig_capnp.h"
 
-#include "proto.capnp.h"
+#include "proto/InnerProto.capnp.h"
+#include "proto/OuterProto.capnp.h"
 
 #include "inner.h"
 #include "outer.h"

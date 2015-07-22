@@ -1,10 +1,13 @@
 
+"""TODO"""
+
 import capnp
 
-from example.inner import Inner
-from example.proto_capnp import OuterProto
+from example.bindings import Inner
+from example.proto.OuterProto_capnp import OuterProto
 
-class Outer(object):
+class Hybrid(object):
+  """Python 'Outer' clone that delegates 'Inner' work to bindings."""
 
   def __init__(self, fieldA=0.0, f1=None, f2=None):
     self.fieldA = fieldA
@@ -21,6 +24,8 @@ class Outer(object):
   def write(self, proto):
     proto.fieldA = self.fieldA
     inner = proto.inner
+    # This is using the C++ Inner implementation to write to the InnerProto inside
+    # proto.
     self.inner.write(inner)
 
   def readFromFile(self, f):

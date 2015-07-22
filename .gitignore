@@ -1,1 +1,6 @@
-Example.egg-info/
+*.egg-info/
+.DS_Store
+*.pyc
+*.o
+*.cxx
+*.so

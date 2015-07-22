@@ -2,7 +2,8 @@
 #ifndef EXAMPLE_OUTER_H
 #define EXAMPLE_OUTER_H
 
-#include "proto.capnp.h"
+#include "proto/InnerProto.capnp.h"
+#include "proto/OuterProto.capnp.h"
 #include <capnp/message.h>
 #include <capnp/serialize.h>
 #include <kj/std/iostream.h>

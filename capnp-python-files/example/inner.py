@@ -1,7 +1,7 @@
 
 import capnp
 
-from example.proto_capnp import InnerProto
+from example.proto.InnerProto_capnp import InnerProto
 
 class Inner(object):
 
